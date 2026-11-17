@@ -5,9 +5,6 @@ from __future__ import annotations
 import io
 import shlex
 import tarfile
-import uuid
-from datetime import timedelta
-from pathlib import Path
 
 import pytest
 from opensandbox.exceptions import (
@@ -28,7 +25,7 @@ from agents.sandbox.errors import (
 from agents.sandbox.snapshot import NoopSnapshot
 
 from fakes import fake_execution, make_fake_sandbox
-from opensandbox_agents import OpenSandboxClientOptions, OpenSandboxSessionState
+from opensandbox_agents import OpenSandboxSessionState
 from opensandbox_agents.sandbox import OpenSandboxSession
 
 
